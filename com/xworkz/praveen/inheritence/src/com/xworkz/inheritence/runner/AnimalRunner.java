@@ -1,7 +1,7 @@
 package com.xworkz.praveen.inheritence.src.com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.animal.Animal;
-import com.xworkz.inheritence.internal.animal.Dog;
+import com.xworkz.praveen.inheritence.src.com.xworkz.inheritence.internal.animal.Animal;
+import com.xworkz.praveen.inheritence.src.com.xworkz.inheritence.internal.animal.Dog;
 
 public class AnimalRunner {
     public static void main(String[] args) {
