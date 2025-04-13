@@ -1,11 +1,11 @@
 package com.xworkz.tostring.inner;
 
-public class Table {
+public class WashingMachine {
     private String propertyOne;
     private int propertyTwo;
     private boolean propertyThree;
 
-    public Table(String propertyOne, int propertyTwo, boolean propertyThree) {
+    public WashingMachine(String propertyOne, int propertyTwo, boolean propertyThree) {
         this.propertyOne = propertyOne;
         this.propertyTwo = propertyTwo;
         this.propertyThree = propertyThree;
@@ -13,12 +13,12 @@ public class Table {
 
     @Override
     public String toString() {
-        return "Table [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
+        return "WashingMachine [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
 
     @Override
     public int hashCode() {
-        return 123;
+        return 678;
     }
 
     @Override
@@ -29,10 +29,10 @@ public class Table {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Table table = (Table) obj;
-        return propertyTwo == table.propertyTwo &&
-                propertyThree == table.propertyThree &&
-                propertyOne.equals(table.propertyOne);
+        WashingMachine that = (WashingMachine) obj;
+        return propertyTwo == that.propertyTwo &&
+                propertyThree == that.propertyThree &&
+                propertyOne.equals(that.propertyOne);
     }
 
 }

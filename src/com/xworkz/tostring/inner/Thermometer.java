@@ -1,11 +1,11 @@
 package com.xworkz.tostring.inner;
 
-public class Table {
+public class Thermometer {
     private String propertyOne;
     private int propertyTwo;
     private boolean propertyThree;
 
-    public Table(String propertyOne, int propertyTwo, boolean propertyThree) {
+    public Thermometer(String propertyOne, int propertyTwo, boolean propertyThree) {
         this.propertyOne = propertyOne;
         this.propertyTwo = propertyTwo;
         this.propertyThree = propertyThree;
@@ -13,7 +13,7 @@ public class Table {
 
     @Override
     public String toString() {
-        return "Table [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
+        return "Thermometer [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
 
     @Override
@@ -29,10 +29,10 @@ public class Table {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Table table = (Table) obj;
-        return propertyTwo == table.propertyTwo &&
-                propertyThree == table.propertyThree &&
-                propertyOne.equals(table.propertyOne);
+        Thermometer thermometer = (Thermometer) obj;
+        return propertyTwo == thermometer.propertyTwo &&
+                propertyThree == thermometer.propertyThree &&
+                propertyOne.equals(thermometer.propertyOne);
     }
 
 }
